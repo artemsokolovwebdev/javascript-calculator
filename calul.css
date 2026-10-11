@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1e1f26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Parent_Cal {
+    background-color: #292d36;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input input {
+    width: 100%;
+    height: 70px;
+    background-color: #22252d;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 2.2rem;
+    text-align: right;
+    padding: 0 15px;
+    outline: none;
+}
+
+.button_1, .button_2 {
+    display: grid;
+    gap: 10px;
+}
+
+.button_1 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.button_2 {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5px;
+}
+
+button {
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    user-select: none;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.BB {
+    background-color: #22252d;
+    color: #ffffff;
+}
+
+.BB:hover {
+    background-color: #323743;
+}
+
+.B2 {
+    background-color: #22252d;
+    color: #000;
+    background-color: #2a323d;
+    color: #26e7a6;
+}
+
+.B2:hover {
+    background-color: #384352;
+}
+
+.B_C {
+    background-color: #ff5e5e;
+    color: #ffffff;
+}
+
+.B_C:hover {
+    background-color: #e04b4b;
+}
+
+.B_Eq {
+    background-color: #26e7a6;
+    color: #22252d;
+    grid-column: span 2; /* Занимает 2 колонки */
+}
+
+.B_Eq:hover {
+    background-color: #20ca91;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calul.css">   
+    <script src="script_Cal.js" defer></script>
+</head>
+<body>
+    <div class="Parent_Cal">
+        <div class="input">
+            <input type="text" id="display" readonly>
+        </div>
+        
+        <div class="button_1">
+            <button class="BB">1</button>            
+            <button class="BB">2</button>
+            <button class="BB">3</button>
+            <button class="BB">4</button>
+            <button class="BB">5</button>
+            <button class="BB">6</button>
+            <button class="BB">7</button>
+            <button class="BB">8</button>
+            <button class="BB">9</button>
+            <button class="BB" style="grid-column: span 3;">0</button> <!-- Ноль на всю ширину -->
+        </div>
+
+        <div class="button_2">
+            <button class="B2">+</button>
+            <button class="B2">-</button>
+            <button class="B2">*</button>
+            <button class="B2">/</button>
+            <button class="B2">.</button>
+            <button class="B_C" onclick="clearDisplay()">C</button>
+            <button class="B_Eq">=</button>
+        </div>
+    </div>
+</body>
+</html
